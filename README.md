@@ -1,43 +1,42 @@
-# AI RPG Content Engine (Structured Version)
+# 🎮 AI RPG Content Engine
 
-## Overview
-This project generates structured RPG content such as quests, NPCs, items, and lore using NLP.
+## 🚀 Overview
+This project is an AI-powered RPG content generation system designed to assist game developers in creating structured game content such as quests, NPCs, items, and lore.
 
-## Features
-- Structured output (Title, Objective, etc.)
-- Parameter control (temperature, seed)
-- FastAPI backend
-- Clean modular design
+It exposes a REST API built using FastAPI and leverages NLP models to generate dynamic, parameter-controlled outputs suitable for turn-based RPG development.
 
-## Run
-pip install -r requirements.txt  
-uvicorn main:app --reload  
+---
 
-Open:
-http://127.0.0.1:8000/docs
+## 🎯 Objective
+The goal of this project is to demonstrate how machine learning can be integrated into game development pipelines to automate and accelerate content creation.
 
-## Example Input
-{
-  "type": "quest",
-  "genre": "dark fantasy",
-  "mood": "mysterious",
-  "difficulty": "hard",
-  "temperature": 0.7
-}
+---
 
-## Output Style
-Title  
-Objective  
-Location  
-Enemy/Boss  
-Reward  
-Twist  
+## 🧠 Features
+- Generate **Quests, NPCs, Items, and Lore**
+- Structured output (game-design friendly format)
+- Parameter control:
+  - `temperature` → controls creativity
+  - `seed` → ensures reproducibility
+  - `difficulty` → affects complexity
+- FastAPI backend with interactive API docs
+- Clean and modular codebase
 
-## Why Structured Output
-- Easier to read  
-- Game-ready format  
-- Better for developers  
+---
 
-## Future Improvements
-- Better models
-- UI integration
+## 🛠 Tech Stack
+- Python  
+- FastAPI  
+- Hugging Face Transformers  
+- PyTorch  
+- distilgpt2 (lightweight NLP model)
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone <your-repo-link>
+cd game-ai-generator
+pip install -r requirements.txt
+uvicorn main:app --reload
