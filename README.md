@@ -32,6 +32,18 @@ The goal of this project is to demonstrate how machine learning can be integrate
 - distilgpt2 (lightweight NLP model)
 
 ---
+## 📸 Demo
+
+### 🔹 API Docs Page
+![API Docs](docs_page.png)
+
+### 🔹 Temperature Comparison
+
+#### Temperature = 0.3
+![Low Temp](temp_low.png)
+
+#### Temperature = 0.7
+![High Temp](temp_high.png)
 
 ## ⚙️ Installation & Setup
 
